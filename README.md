@@ -29,6 +29,19 @@ The app will automatically reload if you make changes to the code.
 About This Project
 This project was created as part of my learning journey in data storytelling and analytics. I’m exploring tools like Shiny, Streamlit, Power BI, and AI to make data more accessible and engaging. This app showcases how simple interactivity can bring a dataset to life — even as a beginner 
 
+## My Approach 
+
+In this project, I wanted to create a simple web app using Shiny in Python that allows users to filter and explore movie data. I started by loading the movie data from a CSV file using pandas.read_csv(). This is a straightforward way to work with data in Python, and since I was working with a file, it made sense to use this method to get everything into the app.
+
+Once I had the data, I cleaned up the column names using str.strip() to remove any extra spaces. This ensures that I don’t run into errors when referencing column names later in the code.
+
+For the filtering options, I focused on three main criteria: movie title, language, and director. I created the dropdown lists by selecting the unique values from each column in the dataset. First, I used dropna() to remove any missing data, then unique() to get distinct values. To make it easier for users, I sorted the options alphabetically using sorted(). I also added a "Show All" option to each dropdown so that users could reset their filter if they wanted to see the entire dataset again.
+
+The filtering itself happens in the server() function. For each dropdown, I check if the user has selected a specific option or "Show All". If they chose something other than "Show All", I filter the data to match that selection. I also added a search box where users can search for movie titles, applying this filter if there’s text in the search input.
+
+Finally, I wanted to make sure the user experience was smooth, so I displayed the filtered data in a table, showing only the top 50 results to avoid overwhelming the user with too many rows at once.
+
+Overall, I wrote the code this way to make it easy for anyone to interact with and explore the movie data. It’s a straightforward approach that lets users filter and search based on their preferences, while keeping things simple and efficient.
 
 ```bash
 
