@@ -27,7 +27,8 @@ Open your browser and visit the localhost
 The app will automatically reload if you make changes to the code.
 
 About This Project
-This project was created as part of my learning journey in data storytelling and analytics. I’m exploring tools like Shiny, Streamlit, Power BI, and AI to make data more accessible and engaging. This app showcases how simple interactivity can bring a dataset to life — even as a beginner 
+
+This project was created as part of my learning journey in data storytelling and analytics. I’m exploring tools like Shiny, Streamlit, Power BI, and AI to make data more accessible and engaging. This app showcases how simple interactivity can bring a dataset to life, even as a beginner 
 
 ## My Approach 
 
